@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_content %}
+<h1>{{ piece.title }}</h1>
+<p><strong>{{ piece.topic }}</strong></p>
+<div class="row">
+    <div class="col-md-8">
+        <img src="{% static piece.image %}" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <p>{{ piece.body }}</p>
+    </div>
+</div>
+{% endblock %}
